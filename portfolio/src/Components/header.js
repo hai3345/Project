@@ -8,12 +8,8 @@ const MenuItem = (children) =>{
 const Header = () => {
     return(
         <div>
-            <div className="logo">Baner</div>
-            <div className="menu">
-                <MenuItem>Home</MenuItem>
-                <MenuItem>소개</MenuItem>
-                <MenuItem>프로젝트</MenuItem>
-            </div>
+            <div className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-topnavbar navbar-expand-lg bg-secondary text-uppercase fixed-top">Baner</div>
+
         </div>
     );
 };
