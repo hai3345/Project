@@ -1,28 +1,32 @@
 
 import './App.css';
-import { BrowserRouter as Router, Link, Routes, Route} from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import MainPage from './MainPage';
-
-import { Nav } from 'react-bootstrap';
 import  Home from "./page/home"
 import Info from "./page/info"
 import Project from "./page/project"
-import Header from "./Components/header"
+import Header from "./header"
+
 
 
 function App() {
+  const [ topNav, setTopNav ] = useState('home')
+  
+
+
   return (
     <div className='App'>
-      <Header />
+      
       <Router>
-          <Routes>
+        <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Home />} path="/home"/>
             <Route element={<Info />} path="/info"/>
             <Route element={<Project />} path="/project"/>
-          </Routes>        
+        </Routes>  
+        <Header />
       </Router>
     </div>
   );
