@@ -2,7 +2,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import  Home from "./page/home"
 import Info from "./page/info"
@@ -12,13 +12,11 @@ import Header from "./header"
 
 
 function App() {
-  const [ topNav, setTopNav ] = useState('home')
+
+ 
   
-
-
   return (
-    <div className='App'>
-      
+    <div>
       <Router>
         <Routes>
             <Route element={<Home />} path="/" />
@@ -27,6 +25,8 @@ function App() {
             <Route element={<Project />} path="/project"/>
         </Routes>  
         <Header />
+        <Project />
+        <Info />
       </Router>
     </div>
   );

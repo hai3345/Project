@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+
 
 
 const Home = () => {
     return (
-        <header className="masthead bg-primary text-white text-center">
-        <div className="container d-flex align-items-center flex-column">
-            <div className="masthead-heading text-uppercase mb-0">여기는 홈!!</div>
+        <div className="HomePage">
+            <div className="containerHome">
+                <li>여기는 홈</li>
+                <li>dddddd</li>
+                <li>dddddd</li>
+                <li>dddddd</li>
+                <li>dddddd</li>
+                <li>dddddd</li>
+                
+            </div>
         </div>
-        </header>
     );
   };
   

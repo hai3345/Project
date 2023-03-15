@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+
 
 const Project =() => {
     return(
-<div>project</div>
-        
+        <div className="projectPage">
+            <div className="containerProject">project</div>
+        </div>
     )
 }
 

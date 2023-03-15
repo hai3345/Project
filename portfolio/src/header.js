@@ -1,9 +1,6 @@
 import React from "react";
 import  "./Components/header.css";
-import { BrowserRouter as Router, Routes,Link, Route} from 'react-router-dom'; 
-import  Home from "./page/home";
-import Info from "./page/info";
-import Project from "./page/project";
+import { Link} from 'react-router-dom'; 
 
 const Header = () => {
     return(
