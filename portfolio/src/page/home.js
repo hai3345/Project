@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="HomePage">
             <div className="containerHome">
-                <li>여기는 홈</li>
+                <li>여기는wfewef 홈</li>
                 <li>dddddd</li>
                 <li>dddddd</li>
                 <li>dddddd</li>
